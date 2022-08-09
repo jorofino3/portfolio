@@ -58,13 +58,15 @@ export const Projects = () => {
                   </Nav>
                   <TabContent>
                     <TabPane eventKey="first">
+                        {/* map all the projects to the screen */}
                         <Row>
                             {projects.map((project, index) => (
                                 <p> {project.title}</p>
                             ))}
                         </Row>
-
                     </TabPane>
+                    <TabPane eventKey="second">More projects to come</TabPane>
+                    <TabPane eventKey="third">More projects to come</TabPane>
                   </TabContent>
             </TabContainer>
           </Col>

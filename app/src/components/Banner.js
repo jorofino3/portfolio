@@ -8,9 +8,9 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"]; // subject to change
+  const toRotate = ["Student", "Teaching Assitant", "Web Developer"]; // change
 
-  const [delta, setDelta] = useState(300 - Math.random() * 100); // randomize the speed of the text typed
+  const [delta, setDelta] = useState(300 - Math.random() * 100); // randomize the speed of the text typed (change faster?)
   const period = 2000; //time passed between each word in rotation
 
   //types and deletes animated text
@@ -36,6 +36,7 @@ export const Banner = () => {
 
     //delete the twice as fast (subject to change)
     if (isDeleting) {
+      //this logarithmically increases the speed of the delete: change to be a constant delta speed
       setDelta((prevDelta) => prevDelta / 2);
     }
 

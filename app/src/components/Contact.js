@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Container, Row } from "react-bootstrap";
-import contactImg from "../assets/contact-img.svg";
 import { Container, Row, Col } from "react-bootstrap";
+import contactImg from "../assets/img/contact-img.svg";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -34,7 +33,7 @@ export const Contact = () => {
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
+    if (result.code === 200) {
       setStatus({ succes: true, message: "Message sent successfully" });
     } else {
       setStatus({
@@ -86,7 +85,7 @@ export const Contact = () => {
                     type='tel'
                     value={formDetails.phone}
                     placeholder='Phone Number'
-                    onChange={(e) => onFormUpdate("lastName", e.target.value)}
+                    onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
                 </Col>
                 <Col>

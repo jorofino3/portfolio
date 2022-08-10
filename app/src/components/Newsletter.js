@@ -13,7 +13,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
     e.preventDefault();
     email &&
       email.indexOf("@") > -1 &&
-      //not working?
+      //not working
       onValidated({
         EMAIL: email,
       });

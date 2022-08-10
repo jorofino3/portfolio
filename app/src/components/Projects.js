@@ -12,6 +12,8 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const projects = [
@@ -51,8 +53,19 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Projects</h2>
-            <p>Project description</p>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    //plug in different animation
+                    isVisible ? "animate__animated animate__bounce" : ""
+                  }
+                >
+                  <h2>Projects</h2>
+                  <p>Project description</p>
+                </div>
+              )}
+            </TrackVisibility>
             <Tab.Container id='projects-tabs' defaultActiveKey='first'>
               <Nav
                 variant='pills'

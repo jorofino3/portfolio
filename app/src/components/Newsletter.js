@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 
-export const Newsletter = ({ onValidated, status, message }) => {
+export const Newsletter = ({ status, message, onValidated }) => {
   const [email, setEmail] = useState("");
 
   useEffect(() => {
@@ -12,6 +13,7 @@ export const Newsletter = ({ onValidated, status, message }) => {
     e.preventDefault();
     email &&
       email.indexOf("@") > -1 &&
+      //not working?
       onValidated({
         EMAIL: email,
       });

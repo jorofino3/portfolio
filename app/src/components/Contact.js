@@ -22,7 +22,6 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    //fetcj subject to change on server push
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
@@ -33,11 +32,11 @@ export const Contact = () => {
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);
-    if (result.code === 200) {
+    if (result.code == 200) {
       setStatus({ succes: true, message: "Message sent successfully" });
     } else {
       setStatus({
-        succes: false,
+        success: false,
         message: "Something went wrong, please try again later.",
       });
     }
@@ -99,7 +98,7 @@ export const Contact = () => {
                     <span>{buttonText}</span>
                   </button>
                 </Col>
-                {status.messae && (
+                {status.message && (
                   <Col>
                     <p
                       className={

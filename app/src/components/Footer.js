@@ -4,7 +4,8 @@ import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
-import { FontAwesomeIcon } from "@fortawesome/free-solid-svg-icons";
+import { AiFillHeart } from "react-icons/ai";
+
 export const Footer = () => {
   return (
     <footer className='footer'>
@@ -27,7 +28,9 @@ export const Footer = () => {
               </a>
             </div>
             <p className='copyright'>
-              Made with <FontAwesomeIcon icon='fas fa-heart' />, Joey
+              All Rights Reserved &copy; {new Date().getFullYear()}
+              <br />
+              Made with <AiFillHeart /> by Joey Orofino
             </p>
           </Col>
         </Row>

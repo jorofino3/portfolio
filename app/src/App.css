@@ -300,10 +300,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
         transform: translateY(-20px);
     }
 }
-.txt-rotate > .wrap {
+ .wrap {
   /* line created on break */
   border-right: 0.08em solid #666;
+  animation:
+  blink_caret 1.25s step-end infinite;
 }
+@keyframes blink_caret {
+  from, to { border-color: transparent }
+  50% { border-color: #666; }
+}
+
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;

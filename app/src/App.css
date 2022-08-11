@@ -250,6 +250,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 16px;
   display: inline-block;
 }
+
+/* Typing styling */
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
@@ -257,6 +259,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+}
+.wrap {
+  /* line created on break */
+  border-right: 0.08em solid #666;
+  animation:
+  blink_caret 1.25s step-end infinite;
+}
+@keyframes blink_caret {
+  from, to { border-color: transparent }
+  50% { border-color: #666; }
 }
 .banner p {
   color: #B8B8B8;
@@ -299,16 +311,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     100% {
         transform: translateY(-20px);
     }
-}
- .wrap {
-  /* line created on break */
-  border-right: 0.08em solid #666;
-  animation:
-  blink_caret 1.25s step-end infinite;
-}
-@keyframes blink_caret {
-  from, to { border-color: transparent }
-  50% { border-color: #666; }
 }
 
 /************ Skills Css ************/

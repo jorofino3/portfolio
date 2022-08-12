@@ -59,7 +59,7 @@ nav.navbar {
       transform: scale(0);
       transition: 0.3s ease-in-out;
   }
-  /* Makes icon a bit bigger on hover (subject to change)*/
+  /* Makes icon a bit smaller before hover (subject to change)*/
   .social-icon a:hover::before {
       transform: scale(1);
   }

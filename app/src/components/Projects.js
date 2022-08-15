@@ -18,34 +18,40 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "Project 1",
-      description: "Project 1",
+      title: "Gericht",
+      description: "Restaurant website",
       imgUrl: projImg1,
+      link: "https://github.com/jorofino3/restaurant-template",
     },
     {
-      title: "Project 2",
-      description: "Project 2",
+      title: "Movie Land",
+      description: "Search and browse movies",
       imgUrl: projImg2,
+      link: "https://github.com/jorofino3/movie-land",
     },
     {
       title: "Project 3",
       description: "Project 3",
       imgUrl: projImg3,
+      link: "https://github.com/jorofino3/restaurant-template",
     },
     {
       title: "Project 4",
       description: "Project 4",
       imgUrl: projImg1,
+      link: "https://github.com/jorofino3/restaurant-template",
     },
     {
       title: "Project 5",
       description: "Project 5",
       imgUrl: projImg2,
+      link: "https://github.com/jorofino3/restaurant-template",
     },
     {
       title: "Project 6",
       description: "Project 6",
       imgUrl: projImg3,
+      link: "https://github.com/jorofino3/restaurant-template",
     },
   ];
   return (

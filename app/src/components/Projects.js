@@ -7,9 +7,9 @@ import {
   TabContent,
   TabPane,
 } from "react-bootstrap";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import Gericht from "../assets/img/project-gericht.png";
+import PaperPlanes from "../assets/img/project-paperplanes.png";
+import MovieLand from "../assets/img/project-movie.png";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -20,38 +20,38 @@ export const Projects = () => {
     {
       title: "Gericht",
       description: "Restaurant website",
-      imgUrl: projImg1,
+      imgUrl: Gericht,
       link: "https://github.com/jorofino3/restaurant-template",
+    },
+    {
+      title: "Paper Planes",
+      description: "VGDev Club Game",
+      imgUrl: PaperPlanes,
+      link: "https://github.com/jorofino3/movie-land",
     },
     {
       title: "Movie Land",
       description: "Search and browse movies",
-      imgUrl: projImg2,
+      imgUrl: MovieLand,
       link: "https://github.com/jorofino3/movie-land",
     },
     {
-      title: "Project 3",
-      description: "Project 3",
-      imgUrl: projImg3,
+      title: "Gericht",
+      description: "Restaurant website",
+      imgUrl: Gericht,
       link: "https://github.com/jorofino3/restaurant-template",
     },
     {
-      title: "Project 4",
-      description: "Project 4",
-      imgUrl: projImg1,
-      link: "https://github.com/jorofino3/restaurant-template",
+      title: "Paper Planes",
+      description: "VGDev Club Game",
+      imgUrl: PaperPlanes,
+      link: "https://github.com/jorofino3/movie-land",
     },
     {
-      title: "Project 5",
-      description: "Project 5",
-      imgUrl: projImg2,
-      link: "https://github.com/jorofino3/restaurant-template",
-    },
-    {
-      title: "Project 6",
-      description: "Project 6",
-      imgUrl: projImg3,
-      link: "https://github.com/jorofino3/restaurant-template",
+      title: "Movie Land",
+      description: "Search and browse movies",
+      imgUrl: MovieLand,
+      link: "https://github.com/jorofino3/movie-land",
     },
   ];
   return (

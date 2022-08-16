@@ -296,6 +296,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner button:hover svg {
   margin-left: 25px;
+  /* hover animation at https://www.heteroclito.fr/modules/Hover/ */
 }
 /* header picture animation */
 .banner img {

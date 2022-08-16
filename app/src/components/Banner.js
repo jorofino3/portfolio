@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import { FiDownload } from "react-icons/fi";
 import headerImg from "../assets/img/header-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -80,11 +80,24 @@ export const Banner = () => {
                     {"I'm Joey, I'm a "}
                     <span className='wrap'> {text} </span>
                   </h1>
-                  <p> About myself goes here </p>
-                  {/* Resume goes here on click */}
-                  <button onClick={() => console.log("Resume Download")}>
+                  <p>
+                    {" "}
+                    An enthusiastic Computer Science major in my third year at
+                    Georgia Tech. I am passionate about Artificial intelligence
+                    and Web Development. I am striving to make a meaningful
+                    impact through designing, building, and evaluating systems
+                    that will solve environmental, social, and community issues.{" "}
+                  </p>
+                  <button
+                    onClick={() => (
+                      //bug
+                      <a href='resume.png' download>
+                        Download
+                      </a>
+                    )}
+                  >
                     Resume
-                    <ArrowRightCircle size={25} />
+                    <FiDownload size={20} />
                   </button>
                 </div>
               )}

@@ -4,6 +4,7 @@ import { FiDownload } from "react-icons/fi";
 import headerImg from "../assets/img/header-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import resume from "../assets/img/resume.png";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -18,7 +19,7 @@ export const Banner = () => {
   ];
   const TYPING_SPEED = 510;
   const [delta, setDelta] = useState(TYPING_SPEED);
-  const period = 2000; //time passed between each word in rotation
+  const period = 2250; //time passed between each word in rotation
 
   //types and deletes animated text
   useEffect(() => {
@@ -88,7 +89,20 @@ export const Banner = () => {
                     impact through designing, building, and evaluating systems
                     that will solve environmental, social, and community issues.{" "}
                   </p>
-                  <button
+
+                  <a
+                    href={resume}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    download
+                  >
+                    <button>
+                      Resume
+                      <FiDownload size={20} />
+                    </button>
+                  </a>
+
+                  {/* <button
                     onClick={() => (
                       //bug
                       <a href='resume.png' download>
@@ -98,7 +112,7 @@ export const Banner = () => {
                   >
                     Resume
                     <FiDownload size={20} />
-                  </button>
+                  </button> */}
                 </div>
               )}
             </TrackVisibility>

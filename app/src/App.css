@@ -277,11 +277,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
+.banner a {
+  text-decoration: none;
+}
+
 /* banner button styling: font subject to change bigger */
 .banner button {
   color: #fff;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 22px;
   margin-top: 60px;
   letter-spacing: 0.8px;
   display: flex;

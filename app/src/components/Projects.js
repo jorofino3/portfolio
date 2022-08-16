@@ -10,6 +10,8 @@ import {
 import Gericht from "../assets/img/project-gericht.png";
 import PaperPlanes from "../assets/img/project-paperplanes.png";
 import MovieLand from "../assets/img/project-movie.png";
+import ContactManager from "../assets/img/project-contact.png";
+import GameSuite from "../assets/img/project-2340.png";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -36,22 +38,22 @@ export const Projects = () => {
       link: "https://github.com/jorofino3/movie-land",
     },
     {
+      title: "Contact Manager",
+      description: "Manages and stores form inputs",
+      imgUrl: ContactManager,
+      link: "https://github.com/jorofino3/contact-manager",
+    },
+    {
       title: "Gericht",
       description: "Restaurant website",
       imgUrl: Gericht,
       link: "https://github.com/jorofino3/restaurant-template",
     },
     {
-      title: "Paper Planes",
-      description: "VGDev Club Game",
-      imgUrl: PaperPlanes,
-      link: "https://github.com/jorofino3/movie-land",
-    },
-    {
-      title: "Movie Land",
-      description: "Search and browse movies",
-      imgUrl: MovieLand,
-      link: "https://github.com/jorofino3/movie-land",
+      title: "Game Suite",
+      description: "CS 2340 Project Implementation",
+      imgUrl: GameSuite,
+      link: "https://github.com/jorofino3/cs-2340-project",
     },
   ];
   return (
@@ -68,7 +70,7 @@ export const Projects = () => {
                   }
                 >
                   <h2>Projects</h2>
-                  <p>Project description</p>
+                  <p>Click on each project to see more!</p>
                 </div>
               )}
             </TrackVisibility>

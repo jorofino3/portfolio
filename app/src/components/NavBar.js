@@ -14,6 +14,7 @@ import "../App.css";
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  // const logo = "{() => joey}";
 
   useEffect(() => {
     const onScroll = () => {
@@ -38,7 +39,7 @@ export const NavBar = () => {
     <Navbar expand='md' className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href='#home'>
-          <img src={logo} alt='Logo' />
+          <img src={logo} alt='logo' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav'>
           <span className='navbar-toggler-icon'></span>
@@ -85,7 +86,7 @@ export const NavBar = () => {
                 <img src={navIcon3} alt='Instagram' />
               </a>
             </div>
-            <button className='vvd' onClick={() => console.log("connect")}>
+            <button className='vvd'>
               <span>Let’s Connect</span>
             </button>
           </span>

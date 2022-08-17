@@ -1,6 +1,5 @@
-import meter1 from "../assets/img/meter2.png";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.png";
+import beginner from "../assets/img/skills-beginner.png";
+import intermediate from "../assets/img/skills-intermediate.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 // import arrow1 from "../assets/img/arrow1.svg";
@@ -33,30 +32,47 @@ export const Skills = () => {
           <div className='col-12'>
             <div className='skill-bx wow zoomIn'>
               <h2>Skills</h2>
-              <p>
-                Description goes here.
-                <br /> This is more descrition text.
-              </p>
+              <p>Programming Languages and Tools.</p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
                 className='owl-carousel owl-theme skill-slider'
               >
                 <div className='item'>
-                  <img src={meter1} alt='Meter' />
-                  <h5>Skill 1</h5>
+                  <img src={intermediate} alt='intermediate' />
+                  <h5>Java</h5>
                 </div>
                 <div className='item'>
-                  <img src={meter2} alt='Meter' />
-                  <h5>Skill 2</h5>
+                  <img src={intermediate} alt='intermediate' />
+                  <h5>React</h5>
                 </div>
                 <div className='item'>
-                  <img src={meter3} alt='Meter' />
-                  <h5>Skill 3</h5>
+                  <img src={beginner} alt='beginner' />
+                  <h5>Javascript</h5>
                 </div>
                 <div className='item'>
-                  <img src={meter1} alt='Meter' />
-                  <h5>Skill 4</h5>
+                  <img src={beginner} alt='beginner' />
+                  <h5>CSS</h5>
+                </div>
+                <div className='item'>
+                  <img src={intermediate} alt='intermediate' />
+                  <h5>HTML5</h5>
+                </div>
+                <div className='item'>
+                  <img src={beginner} alt='beginner' />
+                  <h5>C</h5>
+                </div>
+                <div className='item'>
+                  <img src={intermediate} alt='intermediate' />
+                  <h5>Git</h5>
+                </div>
+                <div className='item'>
+                  <img src={beginner} alt='beginner' />
+                  <h5>Kotlin</h5>
+                </div>
+                <div className='item'>
+                  <img src={beginner} alt='beginner' />
+                  <h5>Python</h5>
                 </div>
               </Carousel>
             </div>

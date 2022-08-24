@@ -59,7 +59,7 @@ export const Contact = () => {
                   <input
                     type='text'
                     name='name'
-                    placeholder='First Name'
+                    placeholder='Name'
                     required
                     //gets the input from the first name and sets it to the formDetails.firstName and so on for the other inputs
                     // onChange={(e) => onFormUpdate("firstName", e.target.value)}
@@ -69,28 +69,19 @@ export const Contact = () => {
                   <input
                     type='text'
                     name='name'
-                    placeholder='Last Name'
+                    placeholder='Email'
                     // onChange={(e) => onFormUpdate("lastName", e.target.value)}
                   />
                 </Col>
-                <Col sm={6} className='px-1'>
+                <Col sm={6} md={12} className='px-1'>
                   <input
-                    type='email'
+                    type='text'
                     name='name'
-                    placeholder='Email'
+                    placeholder='Subject'
                     onChange={(e) => onFormUpdate("email", e.target.value)}
                   />
                 </Col>
-                {/* subject to change */}
-                {/* <Col sm={6} className='px-1'>
-                  <input
-                    type='tel'
-                    name='name'
-                    placeholder='Phone Number'
-                    onChange={(e) => onFormUpdate("phone", e.target.value)}
-                  />
-                </Col> */}
-                <Col>
+                <Col sm={6} md={12} className='px-1'>
                   <textarea
                     rows='6'
                     name='message'

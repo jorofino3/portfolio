@@ -28,10 +28,10 @@ export const Contact = () => {
     emailjs
 
       .sendForm(
-        process.env.SERVICE_ID,
-        null,
+        "service_rxr3g3t",
+        "template_q85awpe",
         form.current,
-        process.env.PUBLIC_KEY
+        "5df6uhFv4n0SbjGBS"
       )
       .then(
         (result) => {
@@ -53,7 +53,7 @@ export const Contact = () => {
           </Col>
           <Col md={6}>
             <h2>Get In Touch</h2>
-            <form onSubmit={sendEmail}>
+            <form onSubmit={sendEmail} ref={form}>
               <Row>
                 <Col sm={6} className='px-1'>
                   <input
@@ -82,14 +82,14 @@ export const Contact = () => {
                   />
                 </Col>
                 {/* subject to change */}
-                <Col sm={6} className='px-1'>
+                {/* <Col sm={6} className='px-1'>
                   <input
                     type='tel'
                     name='name'
                     placeholder='Phone Number'
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
-                </Col>
+                </Col> */}
                 <Col>
                   <textarea
                     rows='6'

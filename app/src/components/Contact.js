@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import React, { useRef } from "react";
@@ -12,14 +11,14 @@ export const Contact = () => {
     emailjs
       .sendForm(
         "service_rxr3g3t",
-        "template_q85awpe",
+        "template_chfaezj",
         form.current,
         "5df6uhFv4n0SbjGBS"
       )
       .then(
         (result) => {
           //message sent handling
-          alert("Email sent :)");
+          alert("Email Sent!");
         },
         (error) => {
           //error handling

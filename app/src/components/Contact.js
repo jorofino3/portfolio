@@ -13,8 +13,8 @@ export const Contact = () => {
     message: "",
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  // const [buttonText, setButtonText] = useState("Send");
-  // const [status, setStatus] = useState({});
+  const [buttonText, setButtonText] = useState("Send");
+  const [status, setStatus] = useState({});
 
   const onFormUpdate = (catagory, value) => {
     //only updates the form details that we have specified in the arguments (...)
@@ -34,10 +34,12 @@ export const Contact = () => {
       )
       .then(
         (result) => {
+          //message sent handling
           console.log(result.text);
         },
         (error) => {
-          console.log(error.text);
+          //error handling
+          alert("Oops! Something went wrong. Please try again later.");
         }
       );
   };

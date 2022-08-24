@@ -5,28 +5,11 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
-  const formInitialDetails = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    message: "",
-  };
-  const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState("Send");
-  const [status, setStatus] = useState({});
-
-  const onFormUpdate = (catagory, value) => {
-    //only updates the form details that we have specified in the arguments (...)
-    setFormDetails({ ...formDetails, [catagory]: value });
-  };
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
-
       .sendForm(
         "service_rxr3g3t",
         "template_q85awpe",
@@ -56,54 +39,30 @@ export const Contact = () => {
             <form onSubmit={sendEmail} ref={form}>
               <Row>
                 <Col sm={6} className='px-1'>
-                  <input
-                    type='text'
-                    name='name'
-                    placeholder='Name'
-                    required
-                    //gets the input from the first name and sets it to the formDetails.firstName and so on for the other inputs
-                    // onChange={(e) => onFormUpdate("firstName", e.target.value)}
-                  />
+                  <input type='text' name='name' placeholder='Name' required />
                 </Col>
                 <Col sm={6} className='px-1'>
                   <input
                     type='text'
-                    name='name'
+                    name='email'
                     placeholder='Email'
-                    // onChange={(e) => onFormUpdate("lastName", e.target.value)}
+                    required
                   />
                 </Col>
                 <Col sm={6} md={12} className='px-1'>
-                  <input
-                    type='text'
-                    name='name'
-                    placeholder='Subject'
-                    onChange={(e) => onFormUpdate("email", e.target.value)}
-                  />
+                  <input type='text' name='subject' placeholder='Subject' />
                 </Col>
                 <Col sm={6} md={12} className='px-1'>
                   <textarea
                     rows='6'
                     name='message'
                     placeholder='Message'
-                    // onChange={(e) => onFormUpdate("message", e.target.value)}
+                    required
                   ></textarea>
                   <button type='submit'>
-                    <span>{buttonText}</span>
+                    <span>Send</span>
                   </button>
                 </Col>
-                {status.message && (
-                  <Col>
-                    <p
-                      className={
-                        //changes styles bases on if the message sends or not
-                        status.success === false ? "danger" : "success"
-                      }
-                    >
-                      {status.message}
-                    </p>
-                  </Col>
-                )}
               </Row>
             </form>
           </Col>

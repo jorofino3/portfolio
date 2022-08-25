@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
+import { Navbar, Nav, Container, Col } from "react-bootstrap";
+import logo from "../assets/img/logo.jpg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
@@ -14,7 +14,7 @@ import "../App.css";
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
-  // const logo = "{() => joey}";
+  const logo = "{() => joey}";
 
   useEffect(() => {
     const onScroll = () => {
@@ -38,8 +38,8 @@ export const NavBar = () => {
     // <Router>
     <Navbar expand='md' className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href='#home'>
-          <img src={logo} alt='logo' />
+        <Navbar.Brand href='#home' className='logo'>
+          <div> {logo} </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav'>
           <span className='navbar-toggler-icon'></span>

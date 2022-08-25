@@ -5,12 +5,13 @@ import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
   const form = useRef();
+  const SERVICE_ID = process.env.SERVICE_ID;
 
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_rxr3g3t",
+        { SERVICE_ID },
         "template_chfaezj",
         form.current,
         "5df6uhFv4n0SbjGBS"

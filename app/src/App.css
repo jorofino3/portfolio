@@ -90,14 +90,9 @@ nav.navbar {
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
-/* nav.navbar div:not(:first-child):not(:last-child) {
-  margin-left: 20px;
-  margin-right: 20px;
-} */
-
-nav.navbar .logo {
-  font-weight: 600;
-  letter-spacing: 1px;
+.logo {
+  font-weight: 590;
+  letter-spacing: 0.7px;
   padding: 6px 8px;
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -109,37 +104,20 @@ nav.navbar .logo {
   transform: translateY(20%);
   text-align: center;
   font-family: monospace;
-
   position: relative;
-
-
-  /* background: linearc-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  border-radius: 100px;
-  width: 120%;
-  height: 25px;
-
-  font-weight: 700;
-  text-align: center;
-  transform: translateY(0%);
-  color: #fff !important;
-  letter-spacing: 1.6px;
-  font-size: 17px;
-  opacity: 0.75;
-  font-family: monospace; */
-  
   }
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
 }
-nav.navbar a.navbar-brand {
-    width: 9%;
+nav.navbar .navbar-brand {
+    width: 6%
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
-  padding: 0 25px;
+  padding: 25px 0;
   font-size: 18px;
   opacity: 0.75;
 }

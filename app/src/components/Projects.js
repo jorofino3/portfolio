@@ -22,13 +22,13 @@ export const Projects = () => {
   const projects = [
     {
       title: "Paper Planes",
-      description: "VGDev Club Game",
+      description: "Interactive Video Game",
       imgUrl: PaperPlanes,
       link: "https://github.com/jorofino3/movie-land",
     },
     {
       title: "Game Suite",
-      description: "CS 2340 Project Implementation",
+      description: "Chess, Wordle, BlackJack and Andriod App",
       imgUrl: GameSuite,
       link: "https://github.com/jorofino3/cs-2340-project",
     },
@@ -36,7 +36,7 @@ export const Projects = () => {
       title: "Visualization tool",
       description: "Data Structures and Algorithms Visualizations",
       imgUrl: VisTool,
-      link: "https://github.com/jorofino3/restaurant-template",
+      link: "https://csvistool.com/",
     },
 
     {
@@ -69,7 +69,7 @@ export const Projects = () => {
                 <div
                   className={
                     //plug in different animation
-                    isVisible ? "animate__animated animate__bounce" : ""
+                    isVisible ? "animate__animated animate__fadeInDown" : ""
                   }
                 >
                   <h2>Projects</h2>

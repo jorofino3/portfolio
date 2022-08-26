@@ -73,7 +73,7 @@ export const Banner = () => {
                 <div
                   className={
                     //plug in different animation
-                    isVisible ? "animate__animated animate__fadeIn" : ""
+                    isVisible ? "animate__animated animate__fadeInLeft" : ""
                   }
                 >
                   <span className='tagline'>Welcome to my Portfolio</span>

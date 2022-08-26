@@ -4,7 +4,7 @@ import { FiDownload } from "react-icons/fi";
 import headerImg from "../assets/img/header-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import resume from "../assets/img/resume.png";
+import resume from "../assets/img/JoeyOrofinoResume.pdf";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);

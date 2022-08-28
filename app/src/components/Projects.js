@@ -102,8 +102,12 @@ export const Projects = () => {
                     })}
                   </Row>
                 </TabPane>
-                <TabPane eventKey='second'>More projects to come</TabPane>
-                <TabPane eventKey='third'>More projects to come</TabPane>
+                <TabPane eventKey='second'>
+                  <p className='more-projects'>More projects to come! </p>
+                </TabPane>
+                <TabPane eventKey='third'>
+                  <p className='more-projects'>More projects to come!</p>
+                </TabPane>
               </TabContent>
             </Tab.Container>
           </Col>

@@ -106,6 +106,10 @@ nav.navbar {
   font-family: monospace;
   position: relative;
   }
+  .logo:hover {
+    opacity: 0.75;
+    scale: 1;
+  }
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
@@ -438,6 +442,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .nav.nav-pills .nav-link.active {
     /* gradiant on avtive tab */
     border: 1px solid rgba(255, 255, 255, 1);
+}
+.project .more-projects {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
 }
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);

@@ -1,28 +1,32 @@
-import { useState, useEffect } from "react";
-import { Col, Row, Alert } from "react-bootstrap";
-import MailchimpSubscribe from "react-mailchimp-subscribe";
+import { Container, Row, Col } from "react-bootstrap";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
-export const Newsletter = ({ status, message, onValidated }) => {
-  const [email, setEmail] = useState("");
+export const Newsletter = () => {
+  const form = useRef();
 
-  useEffect(() => {
-    if (status === "success") clearFields();
-  }, [status]);
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    email &&
-      email.indexOf("@") > -1 &&
-      //not working
-      onValidated({
-        EMAIL: email,
-      });
+    const input = document.getElementById("input");
+    input.value = "";
+    emailjs
+      .sendForm(
+        "service_rxr3g3t",
+        "template_q85awpe",
+        form.current,
+        "5df6uhFv4n0SbjGBS"
+      )
+      .then(
+        (result) => {
+          //message sent handling
+          alert("Thank you for subscribing to my Newsletter!");
+        },
+        (error) => {
+          //error handling
+          alert("Oops! Something went wrong. Please try again later.");
+        }
+      );
   };
-
-  const clearFields = () => {
-    setEmail("");
-  };
-
   return (
     <Col lg={12}>
       <div className='newsletter-bx wow slideInUp'>
@@ -32,18 +36,16 @@ export const Newsletter = ({ status, message, onValidated }) => {
               Subscribe to my Newsletter<br></br> & Never miss my latest
               updates!
             </h3>
-            {status === "sending" && <Alert>Sending...</Alert>}
-            {status === "error" && <Alert variant='danger'>{message}</Alert>}
-            {status === "success" && <Alert variant='success'>{message}</Alert>}
           </Col>
           <Col md={6} xl={7}>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={sendEmail} ref={form}>
               <div className='new-email-bx'>
                 <input
-                  value={email}
-                  type='email'
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder='Email Address'
+                  type='text'
+                  id='input'
+                  name='email'
+                  placeholder='Email'
+                  required
                 />
                 <button type='submit'>Submit</button>
               </div>

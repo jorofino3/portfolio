@@ -90,18 +90,38 @@ nav.navbar {
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
+.logo {
+  font-weight: 590;
+  letter-spacing: 0.7px;
+  padding: 6px 8px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+  color: #fff !important;
+  border-radius: 100px;
+  transform: translateY(20%);
+  text-align: center;
+  font-family: monospace;
+  position: relative;
+  }
+  .logo:hover {
+    opacity: 0.75;
+    scale: 1;
+  }
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
 }
-nav.navbar a.navbar-brand {
-    width: 9%;
+nav.navbar .navbar-brand {
+    width: 6%
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
-  padding: 0 25px;
+  padding: 25px 0;
   font-size: 18px;
   opacity: 0.75;
 }
@@ -157,7 +177,6 @@ span.navbar-text {
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
-	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
 }
@@ -284,7 +303,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* banner button styling: font subject to change bigger */
 .banner button {
   color: #fff;
-  font-weight: 600;
+  font-weight: 550px;
   font-size: 22px;
   margin-top: 60px;
   letter-spacing: 0.8px;
@@ -299,8 +318,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
 }
 .banner button:hover svg {
-  margin-left: 25px;
-  /* hover animation at https://www.heteroclito.fr/modules/Hover/ */
+  animation: hvr-icon-down 1s ;
 }
 /* header picture animation */
 .banner img {
@@ -317,6 +335,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
         transform: translateY(-20px);
     }
 }
+
+/******** Icon down *******/
+
+/* Icon Down */
+@-webkit-keyframes hvr-icon-down {
+  0%,
+	50%,
+	100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25%,
+	75% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@keyframes hvr-icon-down {
+  0%,
+	50%,
+	100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25%,
+	75% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+
+
 
 /************ Skills Css ************/
 .skill {
@@ -423,6 +474,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .nav.nav-pills .nav-link.active {
     /* gradiant on avtive tab */
     border: 1px solid rgba(255, 255, 255, 1);
+}
+.project .more-projects {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
 }
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);

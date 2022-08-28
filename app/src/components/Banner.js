@@ -1,10 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import { FiDownload } from "react-icons/fi";
+import { FiArrowDownCircle } from "react-icons/fi";
 import headerImg from "../assets/img/header-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import resume from "../assets/img/resume.png";
+import resume from "../assets/img/JoeyOrofinoResume.pdf";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -73,7 +73,7 @@ export const Banner = () => {
                 <div
                   className={
                     //plug in different animation
-                    isVisible ? "animate__animated animate__fadeIn" : ""
+                    isVisible ? "animate__animated animate__fadeInLeft" : ""
                   }
                 >
                   <span className='tagline'>Welcome to my Portfolio</span>
@@ -98,7 +98,7 @@ export const Banner = () => {
                   >
                     <button>
                       Resume
-                      <FiDownload size={20} />
+                      <FiArrowDownCircle className='hvr-icon-down' size={20} />
                     </button>
                   </a>
 

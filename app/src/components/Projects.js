@@ -12,6 +12,7 @@ import PaperPlanes from "../assets/img/project-paperplanes.png";
 import MovieLand from "../assets/img/project-movie.png";
 import ContactManager from "../assets/img/project-contact.png";
 import GameSuite from "../assets/img/project-2340.png";
+import VisTool from "../assets/img/project-vistool.png";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -20,23 +21,31 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "Gericht",
-      description: "Restaurant website",
-      imgUrl: Gericht,
-      link: "https://github.com/jorofino3/restaurant-template",
-    },
-    {
       title: "Paper Planes",
-      description: "VGDev Club Game",
+      description: "Interactive Video Game",
       imgUrl: PaperPlanes,
       link: "https://github.com/jorofino3/movie-land",
     },
+    {
+      title: "Game Suite",
+      description: "Chess, Wordle, BlackJack and Andriod App",
+      imgUrl: GameSuite,
+      link: "https://github.com/jorofino3/cs-2340-project",
+    },
+    {
+      title: "Visualization tool",
+      description: "Data Structures and Algorithms Visualizations",
+      imgUrl: VisTool,
+      link: "https://csvistool.com/",
+    },
+
     {
       title: "Movie Land",
       description: "Search and browse movies",
       imgUrl: MovieLand,
       link: "https://github.com/jorofino3/movie-land",
     },
+
     {
       title: "Contact Manager",
       description: "Manages and stores form inputs",
@@ -49,12 +58,6 @@ export const Projects = () => {
       imgUrl: Gericht,
       link: "https://github.com/jorofino3/restaurant-template",
     },
-    {
-      title: "Game Suite",
-      description: "CS 2340 Project Implementation",
-      imgUrl: GameSuite,
-      link: "https://github.com/jorofino3/cs-2340-project",
-    },
   ];
   return (
     <section className='project' id='projects'>
@@ -66,7 +69,7 @@ export const Projects = () => {
                 <div
                   className={
                     //plug in different animation
-                    isVisible ? "animate__animated animate__bounce" : ""
+                    isVisible ? "animate__animated animate__fadeInDown" : ""
                   }
                 >
                   <h2>Projects</h2>
@@ -99,8 +102,12 @@ export const Projects = () => {
                     })}
                   </Row>
                 </TabPane>
-                <TabPane eventKey='second'>More projects to come</TabPane>
-                <TabPane eventKey='third'>More projects to come</TabPane>
+                <TabPane eventKey='second'>
+                  <p className='more-projects'>More projects to come! </p>
+                </TabPane>
+                <TabPane eventKey='third'>
+                  <p className='more-projects'>More projects to come!</p>
+                </TabPane>
               </TabContent>
             </Tab.Container>
           </Col>

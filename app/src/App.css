@@ -303,7 +303,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* banner button styling: font subject to change bigger */
 .banner button {
   color: #fff;
-  font-weight: 600;
+  font-weight: 550px;
   font-size: 22px;
   margin-top: 60px;
   letter-spacing: 0.8px;
@@ -318,8 +318,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
 }
 .banner button:hover svg {
-  margin-left: 25px;
-  /* hover animation at https://www.heteroclito.fr/modules/Hover/ */
+  animation: hvr-icon-down 1s ;
 }
 /* header picture animation */
 .banner img {
@@ -336,6 +335,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
         transform: translateY(-20px);
     }
 }
+
+/******** Icon down *******/
+
+/* Icon Down */
+@-webkit-keyframes hvr-icon-down {
+  0%,
+	50%,
+	100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25%,
+	75% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@keyframes hvr-icon-down {
+  0%,
+	50%,
+	100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25%,
+	75% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+
+
 
 /************ Skills Css ************/
 .skill {

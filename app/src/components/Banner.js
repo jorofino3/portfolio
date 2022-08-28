@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import { FiDownload } from "react-icons/fi";
+import { FiArrowDownCircle } from "react-icons/fi";
 import headerImg from "../assets/img/header-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -98,7 +98,7 @@ export const Banner = () => {
                   >
                     <button>
                       Resume
-                      <FiDownload size={20} />
+                      <FiArrowDownCircle className='hvr-icon-down' size={20} />
                     </button>
                   </a>
 

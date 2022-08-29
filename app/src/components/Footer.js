@@ -17,11 +17,8 @@ export const Footer = () => {
           <Col sm={6}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__hinge" : ""
-                  }
-                >
+                //can insert animation here
+                <div className={isVisible ? "" : ""}>
                   <div className='logo'>{logo}</div>
                 </div>
               )}

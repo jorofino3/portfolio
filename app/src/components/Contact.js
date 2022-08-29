@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import TrackVisibility from "react-on-screen";
 
 export const Contact = () => {
   const form = useRef();
@@ -35,7 +36,20 @@ export const Contact = () => {
             <img src={contactImg} alt='Contact Me' />
           </Col>
           <Col md={6}>
-            <h2>Get In Touch</h2>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                //can insert animation here
+                <div
+                  className={
+                    isVisible
+                      ? "animate__animated animate__lightSpeedInLeft"
+                      : ""
+                  }
+                >
+                  <h2>Get In Touch</h2>
+                </div>
+              )}
+            </TrackVisibility>
             <form onSubmit={sendEmail} ref={form}>
               <Row>
                 <Col sm={6} className='px-1'>

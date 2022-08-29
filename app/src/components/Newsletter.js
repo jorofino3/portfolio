@@ -19,7 +19,7 @@ export const Newsletter = () => {
       )
       .then(
         (result) => {
-          //message sent handling
+          clicked = true;
           alert("Thank you for subscribing to my Newsletter!");
         },
         (error) => {

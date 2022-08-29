@@ -55,6 +55,10 @@ export const Skills = () => {
                   <h5>CSS</h5>
                 </div>
                 <div className='item'>
+                  <img src={beginner} alt='beginner' />
+                  <h5>Firebase</h5>
+                </div>
+                <div className='item'>
                   <img src={intermediate} alt='intermediate' />
                   <h5>HTML5</h5>
                 </div>

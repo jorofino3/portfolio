@@ -97,7 +97,7 @@ export const Banner = () => {
                     download
                   >
                     <button>
-                      Resume
+                      Resume{" "}
                       <FiArrowDownCircle className='hvr-icon-down' size={20} />
                     </button>
                   </a>

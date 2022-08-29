@@ -709,3 +709,36 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+.footer .logo {
+  font-weight: 590;
+  letter-spacing: 0.7px;
+  padding: 6px 8px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+  color: #fff !important;
+  border-radius: 100px;
+  transform: translateY(20%);
+  text-align: center;
+  font-family: monospace;
+  position: relative;
+  }
+  .footer .logo:hover {
+  font-weight: 590;
+  letter-spacing: 0.7px;
+  padding: 6px 8px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+  color: #fff !important;
+  border-radius: 100px;
+  transform: translateY(20%);
+  text-align: center;
+  font-family: monospace;
+  position: relative;
+  }
+  

@@ -5,6 +5,7 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import { AiFillHeart } from "react-icons/ai";
 import { Newsletter } from "./Newsletter";
+import TrackVisibility from "react-on-screen";
 
 export const Footer = () => {
   const logo = "{() => joey}";
@@ -14,7 +15,17 @@ export const Footer = () => {
         <Row className='align-item-center'>
           <Newsletter />
           <Col sm={6}>
-            <div className='logo'>{logo}</div>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__hinge" : ""
+                  }
+                >
+                  <div className='logo'>{logo}</div>
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
           <Col sm={6} className='text-center text-sm-end'>
             <div className='social-icon'>

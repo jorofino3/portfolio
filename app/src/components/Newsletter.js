@@ -8,18 +8,18 @@ export const Newsletter = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const input = document.getElementById("input");
-    input.value = "";
+    // const input = document.getElementById("input");
+    // input.value = "";
     emailjs
       .sendForm(
         "service_rxr3g3t",
-        "template_q85awpe",
+        "sub_template",
         form.current,
         "5df6uhFv4n0SbjGBS"
       )
       .then(
         (result) => {
-          clicked = true;
+          e.target.reset();
           alert("Thank you for subscribing to my Newsletter!");
         },
         (error) => {

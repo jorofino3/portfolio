@@ -6,20 +6,20 @@ import TrackVisibility from "react-on-screen";
 
 export const Contact = () => {
   const form = useRef();
-  const SERVICE_ID = process.env.SERVICE_ID;
 
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        { SERVICE_ID },
-        "template_chfaezj",
+        "service_rxr3g3t",
+        "email_template",
         form.current,
         "5df6uhFv4n0SbjGBS"
       )
       .then(
         (result) => {
           //message sent handling
+          e.target.reset();
           alert("Email Sent!");
         },
         (error) => {

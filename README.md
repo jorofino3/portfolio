@@ -1,8 +1,8 @@
 
 <div align="center">
-
+<a href="https://jorofino-e97f1.web.app">
   <img width="550" height="300" alt="image" src="app/src/assets/img/Screenshot 2022-08-31 105438.png">
-
+</a>
   <h1>Portfolio</h1>
 
   
@@ -15,6 +15,7 @@ Click [here](https://jorofino-e97f1.web.app/) to view the website.
 </div>
 
   ![npm](https://img.shields.io/npm/v/immer.svg)
+  [![wakatime](https://wakatime.com/badge/github/jorofino3/portfolio.svg)](https://wakatime.com/badge/github/jorofino3/portfolio)
   ![Build Status](https://travis-ci.org/immerjs/immer.svg?branch=master)
   ![Coverage Status](https://coveralls.io/repos/github/mweststrate/immer/badge.svg?branch=master)
   ![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)

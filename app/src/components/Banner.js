@@ -17,9 +17,9 @@ export const Banner = () => {
     "Web Developer",
     "Proud Cat Dad",
   ];
-  const TYPING_SPEED = 510;
+  const TYPING_SPEED = 180; //inversely proportional to typing speed
   const [delta, setDelta] = useState(TYPING_SPEED);
-  const period = 2250; //time passed between each word in rotation
+  const period = 3000; //time passed between each word in rotation
 
   //types and deletes animated text
   useEffect(() => {
@@ -29,7 +29,9 @@ export const Banner = () => {
     }, delta);
     //once the interval is set with the component mounted, it will clear the interval when the component unmounts
     return () => {
-      clearInterval(ticker);
+      setDelta(TYPING_SPEED); //sets the typing speed after every letter typed
+
+      clearInterval(ticker); //clears the interval when the component unmounts
     };
   }, [text]);
 

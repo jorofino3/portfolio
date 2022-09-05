@@ -1,7 +1,7 @@
 
 <div align="center">
 <a href="https://jorofino-e97f1.web.app">
-  <img width="550" height="300" alt="image" src="app/src/assets/img/Screenshot 2022-08-31 105438.png">
+  <img width="800" height="420" alt="image" src="app/src/assets/img/Portfolio.png">
 </a>
   <h1>Portfolio</h1>
 
@@ -36,6 +36,7 @@ This is fully developed with React and CSS
 
 - 👨‍💻 &nbsp;This uses React components, hooks, state, and JSX
 - :art: &nbsp;The project implements the [CSS BEM model](https://css-tricks.com/bem-101/) 
+- :star:  &nbsp; Fully function contact form, newsletter subscription, and internal routing
 - :iphone: &nbsp; Fully adaptive. Well designed for both larger and smaller screen!
 
 

@@ -641,6 +641,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   line-height: 1.2em;
 }
+.newsletter-mobile {
+  
+  padding: 85px 25px;
+  background: #FFFFFF;
+  border-radius: 55px;
+  color: #121212;
+ 
+}
 .new-email-bx {
   background: #fff;
   padding: 5px;
@@ -699,6 +707,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   border-radius: 18px;
 }
+
+
+/* 
+resizing for smaller screens
+@media screen and (max-width: 650px) {
+  .footer .button {
+    background: black;
+  }
+} */
+
+
 .footer img {
   width: 26%;
 }
@@ -725,3 +744,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-family: monospace;
   position: relative;
   }
+  /* resizing for smaller screens */
+@media screen and (max-width: 650px) {
+  .footer .logo {
+    flex-direction: column;
+    width: 100%;
+  }
+}

@@ -104,18 +104,6 @@ export const Banner = () => {
                       <FiArrowDownCircle className='hvr-icon-down' size={20} />
                     </button>
                   </a>
-
-                  {/* <button
-                    onClick={() => (
-                      //bug
-                      <a href='resume.png' download>
-                        Download
-                      </a>
-                    )}
-                  >
-                    Resume
-                    <FiDownload size={20} />
-                  </button> */}
                 </div>
               )}
             </TrackVisibility>

@@ -2,10 +2,15 @@ import { Container, Row, Col } from "react-bootstrap";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import TrackVisibility from "react-on-screen";
+import { useMediaQuery } from "react-responsive";
+
 export const Newsletter = () => {
   const form = useRef();
-  const clicked = false;
-
+  const isMobile = useMediaQuery({ query: `(max-width: 800px)` });
+  let mobileStyle = "newsletter-bx wow slideInUp";
+  if (isMobile) {
+    mobileStyle = "newsletter-mobile";
+  }
   const sendEmail = (e) => {
     e.preventDefault();
     // const input = document.getElementById("input");
@@ -33,7 +38,7 @@ export const Newsletter = () => {
       {({ isVisible }) => (
         <div className={isVisible ? "animate__animated animate__pulse" : ""}>
           <Col lg={12}>
-            <div className='newsletter-bx wow slideInUp'>
+            <div className={mobileStyle}>
               <Row>
                 <Col lg={12} md={6} xl={5}>
                   <h3>
@@ -41,7 +46,7 @@ export const Newsletter = () => {
                     updates!
                   </h3>
                 </Col>
-                <Col md={6} xl={7}>
+                <Col md={6} xl={7} sm={4}>
                   <form onSubmit={sendEmail} ref={form}>
                     <div className='new-email-bx'>
                       <input

@@ -24,7 +24,7 @@ export const Projects = () => {
       title: "Paper Planes",
       description: "Interactive Video Game",
       imgUrl: PaperPlanes,
-      link: "https://github.com/jorofino3/movie-land",
+      link: "https://github.com/jorofino3/PaperPlanes",
     },
     {
       title: "Game Suite",

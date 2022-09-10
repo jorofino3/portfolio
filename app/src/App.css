@@ -90,7 +90,7 @@ nav.navbar {
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
-.logo {
+.navbar .logo {
   font-weight: 590;
   letter-spacing: 0.7px;
   padding: 6px 8px;
@@ -105,11 +105,11 @@ nav.navbar {
   text-align: center;
   font-family: monospace;
   position: relative;
-  }
-  .logo:hover {
+}
+.navbar .logo:hover {
     opacity: 0.75;
     scale: 1;
-  }
+}
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
@@ -303,12 +303,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* banner button styling: font subject to change bigger */
 .banner button {
   color: #fff;
-  font-weight: 550px;
+  font-weight: 565px;
   font-size: 22px;
   margin-top: 60px;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
+  font-family: Centra;
 }
 /* subject to change */
 .banner button svg {
@@ -707,17 +708,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   border-radius: 18px;
 }
-
-
-/* 
-resizing for smaller screens
-@media screen and (max-width: 650px) {
-  .footer .button {
-    background: black;
-  }
-} */
-
-
 .footer img {
   width: 26%;
 }

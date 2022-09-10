@@ -14,8 +14,9 @@ export const Banner = () => {
   const toRotate = [
     "Student",
     "Teaching Assistant",
+    "Technical Lead",
     "Web Developer",
-    "Proud Cat Dad",
+    "Proud cat dad",
   ];
   const TYPING_SPEED = 180; //inversely proportional to typing speed
   const [delta, setDelta] = useState(TYPING_SPEED);

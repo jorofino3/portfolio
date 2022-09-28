@@ -12,13 +12,16 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [index, setIndex] = useState(1);
   const toRotate = [
-    "Student",
-    "Teaching Assistant",
-    "Technical Lead",
     "Web Developer",
+    "Technical Lead",
+    "Teaching Assistant",
+    "Student",
     "Proud cat dad",
   ];
-  const TYPING_SPEED = 180; //inversely proportional to typing speed
+  const maxSpeed = 190;
+  const minSpeed = 160;
+  let TYPING_SPEED =
+    Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed; //inversely proportional to typing speed
   const [delta, setDelta] = useState(TYPING_SPEED);
   const period = 3000; //time passed between each word in rotation
 

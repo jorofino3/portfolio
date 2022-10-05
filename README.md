@@ -1,7 +1,7 @@
 
 <div align="center">
 <a href="https://jorofino.com">
-  <img width="800" height="420" alt="image" src="app/src/assets/img/Portfolio.png">
+  <img width="785" height="410" alt="image" src="app/src/assets/img/Portfolio.png">
 </a>
   <h1>Portfolio</h1>
 

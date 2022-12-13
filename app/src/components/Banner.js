@@ -12,13 +12,13 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [index, setIndex] = useState(1);
   const toRotate = [
-    "Web Developer",
-    "Technical Lead",
-    "Teaching Assistant",
-    "Student",
-    "Proud cat dad",
+    "I'm a Web Developer",
+    "I'm a Technical Lead",
+    "I'm a Teaching Assistant",
+    "I'm a Proud cat dad",
+    "and lily is pretty",
   ];
-  const maxSpeed = 190;
+  const maxSpeed = 75;
   const minSpeed = 160;
   let TYPING_SPEED =
     Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed; //inversely proportional to typing speed
@@ -38,7 +38,6 @@ export const Banner = () => {
       clearInterval(ticker); //clears the interval when the component unmounts
     };
   }, [text]);
-
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
@@ -84,16 +83,16 @@ export const Banner = () => {
                 >
                   <span className='tagline'>Welcome to my Portfolio</span>
                   <h1>
-                    {"I'm Joey, I'm a "}
+                    {"I'm Joey, "}
                     <span className='wrap'> {text} </span>
                   </h1>
                   <p>
                     {" "}
-                    An enthusiastic Computer Science major in my third year at
-                    Georgia Tech. I am passionate about Artificial intelligence
-                    and Web Development. I am striving to make a meaningful
-                    impact through designing, building, and evaluating systems
-                    that will solve environmental, social, and community issues.{" "}
+                    A Computer Science student in my third year at Georgia Tech.
+                    I am passionate about Artificial intelligence, HCI, and Web
+                    Development. I am striving to make a meaningful impact
+                    through designing, building, and evaluating systems that
+                    will solve environmental, social, and community issues.{" "}
                   </p>
 
                   <a

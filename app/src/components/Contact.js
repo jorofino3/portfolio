@@ -14,7 +14,7 @@ export const Contact = () => {
         "service_rxr3g3t",
         "email_template",
         form.current,
-        "5df6uhFv4n0SbjGBS"
+        "q-QCG1sWBwuuELTr0"
       )
       .then(
         (result) => {
@@ -24,7 +24,9 @@ export const Contact = () => {
         },
         (error) => {
           //error handling
-          alert("Oops! Something went wrong. Please try again later.");
+          alert(
+            "React Library now unsupported :( I am working on fixing this."
+          );
         }
       );
   };

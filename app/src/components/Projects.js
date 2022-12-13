@@ -10,7 +10,7 @@ import {
 import Gericht from "../assets/img/project-gericht.png";
 import PaperPlanes from "../assets/img/project-paperplanes.png";
 import MovieLand from "../assets/img/project-movie.png";
-import ContactManager from "../assets/img/project-contact.png";
+import StructQuest from "../assets/img/project-struct.png";
 import GameSuite from "../assets/img/project-2340.png";
 import VisTool from "../assets/img/project-vistool.png";
 import { ProjectCard } from "./ProjectCard";
@@ -21,10 +21,10 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "Paper Planes",
-      description: "Interactive Video Game",
-      imgUrl: PaperPlanes,
-      link: "https://github.com/jorofino3/PaperPlanes",
+      title: "Struct Quest",
+      description: "Human Computer Interaction Project",
+      imgUrl: StructQuest,
+      link: "https://www.figma.com/file/RlVH7D2mbGYDhtP2ofq7D3/Struct-Quest?t=AaZovzNogPZQ8pVK-1",
     },
     {
       title: "Game Suite",
@@ -45,12 +45,11 @@ export const Projects = () => {
       imgUrl: MovieLand,
       link: "https://github.com/jorofino3/movie-land",
     },
-
     {
-      title: "Contact Manager",
-      description: "Manages and stores form inputs",
-      imgUrl: ContactManager,
-      link: "https://github.com/jorofino3/contact-manager",
+      title: "Paper Planes",
+      description: "Interactive Video Game",
+      imgUrl: PaperPlanes,
+      link: "https://github.com/jorofino3/PaperPlanes",
     },
     {
       title: "Gericht",

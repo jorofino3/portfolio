@@ -12,11 +12,10 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [index, setIndex] = useState(1);
   const toRotate = [
-    "I'm a Web Developer",
-    "I'm a Technical Lead",
-    "I'm a Teaching Assistant",
-    "I'm a Proud cat dad",
-    "and lily is pretty",
+    "Web Developer",
+    "Technical Lead",
+    "Teaching Assistant",
+    "Proud cat dad",
   ];
   const maxSpeed = 75;
   const minSpeed = 160;
@@ -83,7 +82,7 @@ export const Banner = () => {
                 >
                   <span className='tagline'>Welcome to my Portfolio</span>
                   <h1>
-                    {"I'm Joey, "}
+                    {"I'm Joey, I'm a"}
                     <span className='wrap'> {text} </span>
                   </h1>
                   <p>

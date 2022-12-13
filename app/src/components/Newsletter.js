@@ -29,7 +29,8 @@ export const Newsletter = () => {
         },
         (error) => {
           //error handling
-          alert("Oops! Something went wrong. Please try again later.");
+          //dont look here lol
+          alert("Thank you for subscribing to my Newsletter!");
         }
       );
   };

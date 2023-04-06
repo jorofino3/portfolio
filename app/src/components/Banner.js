@@ -26,7 +26,7 @@ export const Banner = () => {
 
   //types and deletes animated text
   useEffect(() => {
-    //interval for when the text gets updated
+    //updates the text
     let ticker = setInterval(() => {
       tick();
     }, delta);

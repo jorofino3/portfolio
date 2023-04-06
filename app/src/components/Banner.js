@@ -13,8 +13,8 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [
     "Web Developer",
-    "Technical Lead",
-    "Teaching Assistant",
+    "Head Technical Lead",
+    "Head Teaching Assistant",
     "Proud cat dad",
   ];
   const maxSpeed = 75;

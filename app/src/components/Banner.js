@@ -13,8 +13,8 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [
     "Web Developer",
-    "Technical Lead",
-    "Teaching Assistant",
+    "Head Technical Lead",
+    "Head Teaching Assistant",
     "Proud cat dad",
   ];
   const maxSpeed = 75;
@@ -26,7 +26,7 @@ export const Banner = () => {
 
   //types and deletes animated text
   useEffect(() => {
-    //interval for when the text gets updated
+    //updates the text
     let ticker = setInterval(() => {
       tick();
     }, delta);

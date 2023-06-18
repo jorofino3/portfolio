@@ -12,10 +12,12 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [index, setIndex] = useState(1);
   const toRotate = [
-    "Web Developer",
-    "Head Technical Lead",
+    "Creative developer",
+    "Intern at NCR",
     "Head Teaching Assistant",
-    "Proud cat dad",
+    "Head Technical Lead",
+    "Intern at Develop for Good",
+    "Proud cat dad"
   ];
   const maxSpeed = 75;
   const minSpeed = 160;
@@ -87,11 +89,9 @@ export const Banner = () => {
                   </h1>
                   <p>
                     {" "}
-                    A Computer Science student in my third year at Georgia Tech.
-                    I am passionate about Artificial intelligence, HCI, and Web
-                    Development. I am striving to make a meaningful impact
-                    through designing, building, and evaluating systems that
-                    will solve environmental, social, and community issues.{" "}
+                    Hi there! I am a junior at Georgia Tech studying Computer Science. I enjoy collaborating with others to do and create awesome things. 
+                    I am intrested in Cloud computing and Human Computer Interaction. I am currently interning at NCR Corperation and Develop for Good. 
+                    At these internships, I am developing things that are making world a better place, and I want to forever continue doing that :){" "}
                   </p>
 
                   <a

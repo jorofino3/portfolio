@@ -37,7 +37,7 @@ export const Newsletter = () => {
   return (
     <TrackVisibility>
       {({ isVisible }) => (
-        <div className={isVisible ? "animate__animated animate__pulse" : ""}>
+        <div className={isVisible ? "animate__animated animate__hinge" : ""}>
           <Col lg={12}>
             <div className={mobileStyle}>
               <Row>

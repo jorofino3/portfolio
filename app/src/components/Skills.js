@@ -40,7 +40,7 @@ export const Skills = () => {
               >
                 <div className='item'>
                   <img src={intermediate} alt='intermediate' />
-                  <h5>Java</h5>
+                  <h5>Google Cloud Platform</h5>
                 </div>
                 <div className='item'>
                   <img src={intermediate} alt='intermediate' />
@@ -52,15 +52,27 @@ export const Skills = () => {
                 </div>
                 <div className='item'>
                   <img src={beginner} alt='beginner' />
-                  <h5>CSS</h5>
-                </div>
-                <div className='item'>
-                  <img src={beginner} alt='beginner' />
-                  <h5>Firebase</h5>
+                  <h5>Tailwind CSS</h5>
                 </div>
                 <div className='item'>
                   <img src={intermediate} alt='intermediate' />
-                  <h5>HTML5</h5>
+                  <h5>Kubernetes</h5>
+                </div>
+                <div className='item'>
+                  <img src={intermediate} alt='intermediate' />
+                  <h5>Flux and Helm (DevOps)</h5>
+                </div>
+                <div className='item'>
+                  <img src={beginner} alt='beginner' />
+                  <h5>Python</h5>
+                </div>
+                <div className='item'>
+                  <img src={intermediate} alt='intermediate' />
+                  <h5>Google Cloudbuild (CI/CD)</h5>
+                </div>
+                <div className='item'>
+                  <img src={intermediate} alt='intermediate' />
+                  <h5>Three.js</h5>
                 </div>
                 <div className='item'>
                   <img src={beginner} alt='beginner' />
@@ -71,12 +83,12 @@ export const Skills = () => {
                   <h5>Git</h5>
                 </div>
                 <div className='item'>
-                  <img src={beginner} alt='beginner' />
-                  <h5>Kotlin</h5>
+                  <img src={intermediate} alt='intermediate' />
+                  <h5>Java Spring Boot</h5>
                 </div>
                 <div className='item'>
-                  <img src={beginner} alt='beginner' />
-                  <h5>Python</h5>
+                  <img src={intermediate} alt='intermediate' />
+                  <h5>Figma</h5>
                 </div>
               </Carousel>
             </div>

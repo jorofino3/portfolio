@@ -12,19 +12,18 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [index, setIndex] = useState(1);
   const toRotate = [
-    "Creative developer",
-    "Intern at NCR",
+    "previous intern at NCR Corporation",
     "Head Teaching Assistant",
-    "Head Technical Lead",
-    "Intern at Develop for Good",
-    "Proud cat dad"
+    "President at Google Developers Club",
+    "previous intern at Develop for Good",
+    "Proud cat dad",
   ];
   const maxSpeed = 75;
   const minSpeed = 160;
   let TYPING_SPEED =
     Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed; //inversely proportional to typing speed
   const [delta, setDelta] = useState(TYPING_SPEED);
-  const period = 3000; //time passed between each word in rotation
+  const period = 1875; //time passed between each word in rotation
 
   //types and deletes animated text
   useEffect(() => {
@@ -89,9 +88,14 @@ export const Banner = () => {
                   </h1>
                   <p>
                     {" "}
-                    Hi there! I am a junior at Georgia Tech studying Computer Science. I enjoy collaborating with others to do and create awesome things. 
-                    I am intrested in Cloud computing and Human Computer Interaction. I am currently interning at NCR Corperation and Develop for Good. 
-                    At these internships, I am developing things that are making world a better place, and I want to forever continue doing that :){" "}
+                    Hi there! I am a junior at Georgia Tech studying Computer
+                    Science. I enjoy collaborating with others to do and create
+                    awesome things. I am intrested in Cloud computing and Human
+                    Computer Interaction. I have interned at NCR and Develop for
+                    Good, but I am also the head TA for CS 1332 and the
+                    President of Google Developer Student Club! Ultimately, I
+                    want to develop things that will make the world a better
+                    place :){" "}
                   </p>
 
                   <a

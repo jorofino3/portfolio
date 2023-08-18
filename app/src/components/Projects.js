@@ -40,7 +40,7 @@ export const Projects = () => {
 
     {
       title: "Discrete Math Learning Platform",
-      description: "Capstone Project - Figma Prototype",
+      description: "Capstone Project",
       imgUrl: JuniorDesign,
       link: "https://www.figma.com/proto/z1RfBJY49vEq9LdGqtoZT1/Capstone-Proj.-UI?node-id=8-3447&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=8%3A3447",
     },
